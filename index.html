@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Commerce Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Simple Commerce Site</h1>
+    </header>
+    <main>
+        <section class="products">
+            <h2>Our Products</h2>
+            <div class="product-list">
+                <article class="product">
+                    <h3>Product 1</h3>
+                    <p>This is a great product.</p>
+                </article>
+                <article class="product">
+                    <h3>Product 2</h3>
+                    <p>This is an even better product.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Contact us for more information!</p>
+    </footer>
+    <script>
+        // Example user object. Replace with dynamic user data as appropriate.
+        var user = {
+            name: "John Doe",
+            id: "uuid-1234",
+            email: "john@example.com",
+            createdAt: Math.floor(Date.now() / 1000) // Current time as a Unix timestamp
+        };
+
+        window.intercomSettings = {
+            api_base: "https://api-iam.intercom.io",
+            app_id: "e07jha7f",
+            name: user.name, // Full name
+            user_id: user.id, // a UUID for your user
+            email: user.email, // the email for your user
+            created_at: user.createdAt // Signup date as a Unix timestamp
+        };
+    </script>
+    <script>
+        // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/e07jha7f'
+        (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/e07jha7f';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(document.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+    </script>
+</body>
+</html>

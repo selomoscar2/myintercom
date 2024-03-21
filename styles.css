@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f0f0f0;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    width: 30%;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
