@@ -36,20 +36,19 @@
             email: "john@example.com",
             createdAt: Math.floor(Date.now() / 1000) // Current time as a Unix timestamp
         };
-
         window.intercomSettings = {
             api_base: "https://api-iam.intercom.io",
-            app_id: "e07jha7f",
+            app_id: "bsvc08gd",
             name: user.name, // Full name
             user_id: user.id, // a UUID for your user
             email: user.email, // the email for your user
-            user_hash: "62ef5e09f31dfc8fd3e32024530641b15cd97b7b53e4504adf60c1d0ad0",
             created_at: user.createdAt // Signup date as a Unix timestamp
         };
+        // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/bsvc08gd'
+        (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/bsvc08gd';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(document.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+
+
     </script>
-    <script>
-        // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/e07jha7f'
-        (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/e07jha7f';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(document.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
-    </script>
+  
 </body>
 </html>
